@@ -12,249 +12,342 @@ body {
 }
 
 .container {
-   width: 940px;
-   margin: 0 auto;
- }
+  width: 940px;
+  margin: 0 auto;
 
-header {
-  background-color: #4e8598;
-  text-align: center;
+  @include r(767) {
 
-  .header__logo {
-    padding: 54px 429px 186px 429px;
-  }
-
-  .header__h1 {
-    font-size: 27px;
-    font-weight: bold;
-    letter-spacing: 0.54px;
-    color: #ffffff;
-    margin-bottom: 29px;
-    width: 594px;
-    height: 64px;
-    padding: 0 193px;
-    text-transform: uppercase;
-  }
-
-  .header__button {
-    border: 1px solid white;
-    border-radius: 40px;
-    width: 218px;
-    height: 55px;
-    margin: 0 381px 177px 381px;
-    text-transform: uppercase;
-  }
-
-  .header__button_text {
-    padding: 19px 32px 23px 36px;
-    font-size: 13px;
-    font-weight: bold;
-    color: #ffffff;
-    letter-spacing: 0.26px;
-  }
-
-  .header__arrow {
-    padding-bottom: 58px;
   }
 }
 
-#description-first {
-  background-color: white;
-  margin-top: 80px;
+#header {
+  background-image: url("../img/header.png");
+  background-repeat: repeat no-repeat;
+  padding: 57px 0 82px 0;
 
-  .wrapper__h2 {
-    font-size: 26px;
-    font-weight: bold;
-    line-height: 1.27;
-    letter-spacing: 0.52px;
-    color: #2f383b;
+  header {
+    display: flex;
+    justify-content: space-between;
+
+    .menu {
+      font-size: 15px;
+      font-weight: 900;
+      letter-spacing: 1.8px;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: white;
+        margin-right: 40px;
+        text-transform: uppercase;
+
+        &:nth-child(3) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .email {
+      font-size: 13px;
+      font-weight: 300;
+      letter-spacing: 1.56px;
+      color: white;
+
+      &:after {
+        content: '';
+        display: block;
+        width: 135px;
+        height: 1px;
+        background-color: #666864;
+        margin-top: 10px;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .text {
+
+    h1 {
+      font-size: 49px;
+      line-height: 1.12;
+      letter-spacing: 5.88px;
+      text-align: center;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-top: 297px;
+    }
+
+    p {
+      font-size: 29px;
+      font-weight: 100;
+      letter-spacing: 3.48px;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  .img {
     text-align: center;
-    margin-bottom: 85px;
+    margin-top: 265px;
+  }
+}
+
+#aboutme {
+  padding: 86px 0 97px 0;
+
+  h2 {
+    font-size: 37px;
+    letter-spacing: 4.44px;
+    text-align: left;
+    color: #22241b;
+    text-transform: uppercase;
+    margin-bottom: 76px;
   }
 
   .wrapper {
     display: flex;
-    margin-bottom: 157px;
-  }
+    justify-content: space-between;
 
-  h3 {
-     width: 125px;
-     height: 16px;
-     font-size: 22px;
-     font-weight: bold;
-     line-height: 1.5;
-     letter-spacing: 0.44px;
-     color: #2f383b;
-     padding-bottom: 45px;
+    .background {
+      margin-right: 45px;
 
-    &:after {
-      display: block;
-      content: "";
-      width: 72px;
-      height: 3px;
-      background-color: #4e8598;
-      margin-top: 5px;
-    }
-   }
-
-  .wrapper__first {
-    width: 393px;
-    margin-right: 94px;
-
-    p {
-      font-size: 15px;
-      line-height: 1.6;
-      letter-spacing: 0.3px;
-      text-align: left;
-      width: 393px;
-    }
-  }
-
-  .wrapper__second {
-
-    .merit__item {
-      display: flex;
-      padding-bottom: 25px;
-
-      img {
-        padding-right: 24px;
+      h3 {
+        font-size: 22px;
+        letter-spacing: 2.64px;
+        text-align: left;
+        color: rgba(34, 36, 27, 0.66);
+        margin-bottom: 46px;
       }
-      .text {
-        font-size: 16px;
-        font-weight: bold;
-        line-height: 2.06;
-        letter-spacing: 0.32px;
-        color: #4e8598;
-        padding-right: 29px;
-      }
-      .hint {
-        opacity: 0.48;
+
+      p {
         font-size: 15px;
-        line-height: 1.6;
+        font-weight: 300;
+        line-height: 1.8;
         letter-spacing: 0.3px;
-        color: rgba(47, 56, 59, 0.48);
+        text-align: left;
+        color: #22241b;
+      }
+    }
+
+    .merits {
+
+
+      h3 {
+        font-size: 22px;
+        letter-spacing: 2.64px;
+        text-align: left;
+        color: rgba(34, 36, 27, 0.66);
+        margin-bottom: 43px;
+      }
+
+      .merits__menu {
+        display: flex;
+        justify-content: space-between;
+
+        .item {
+          margin-right: 54px;
+          margin-bottom: 65px;
+
+          &:nth-child(3) {
+            margin-right: 0;
+          }
+
+          .item__wrapper {
+            background-image: url("../img/romb.png");
+            background-repeat: no-repeat;
+            width: 105px;
+            height: 105px;
+            text-align: center;
+            line-height: 105px;
+            margin-bottom: 22px;
+          }
+
+          p {
+            font-size: 12px;
+            font-weight: 100;
+            letter-spacing: 0.24px;
+            text-align: center;
+            line-height: 1.5;
+            color: #22241b;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+
+    .connection {
+
+      .connection__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        h3 {
+          font-size: 22px;
+          line-height: 2.5;
+          letter-spacing: 2.64px;
+          text-align: left;
+          color: rgba(34, 36, 27, 0.66);
+          margin-bottom: 38px;
+        }
+
+        .connection__text {
+
+          a {
+            font-weight: 300;
+            letter-spacing: 1.68px;
+            text-align: left;
+            color: #204d15;
+            text-decoration: underline;
+            margin-bottom: 21px;
+            display: inline-block;
+            margin-right: 43px;
+
+            &:nth-child(3) {
+              margin-bottom: 0;
+            }
+          }
+        }
       }
     }
   }
 }
-#description-second {
+
+#skills {
+  padding-bottom: 83px;
+
   h2 {
-    font-size: 26px;
-    line-height: 1.27;
-    letter-spacing: 0.52px;
-    text-align: center;
-    color: #2f383b;
-    font-weight: bold;
+    font-size: 37px;
+    line-height: 1.49;
+    letter-spacing: 4.44px;
+    text-align: left;
+    color: #22241b;
+    margin-bottom: 62px;
     text-transform: uppercase;
-    margin-bottom: 68px;
   }
 
-  .content-first {
-    margin-bottom: 64px;
+  .skills__menu {
+    display: flex;
+    justify-content: space-between;
 
     .item {
-      display: inline-block;
-      margin-right: 155px;
-      background-color: white;
-      text-align: center;
+      display: flex;
 
-      &:nth-child(1) {
-        margin-left: 50px;
-      }
-
-      &:nth-child(2) {
-
-      }
-
-      &:nth-child(3) {
-        margin-right: 0;
-      }
-    }
-
-      .number {
-        width: 75px;
-        height: 75px;
-        border-radius: 50%;
-        border: solid 1px #2f383b;
-        margin-left: 30px;
-
-        &:nth-child(2) {
-          background-color: black;
-        }
-      }
-      .text {
-        font-size: 16px;
-        font-weight: bold;
-        line-height: 2.06;
-        letter-spacing: 0.32px;
+      .item__wrapper {
+        background-image: url("../img/circle.png");
+        background-repeat: no-repeat;
+        width: 61px;
+        height: 61px;
+        line-height: 61px;
         text-align: center;
-        color: #2f383b;
+        margin-right: 27px;
       }
-    }
-  .content-second {
-
-    h3 {
-      font-size: 22px;
-      font-weight: bold;
-      line-height: 1.5;
-      letter-spacing: 0.44px;
-      text-align: center;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-    }
-
-    p {
-      width: 450px;
-      margin: 0 auto;
-      height: 38px;
-      font-size: 14px;
-      line-height: 1.64;
-      letter-spacing: 0.28px;
-      text-align: center;
-    }
-
-    .connection {
-      width: 218px;
-      margin: 27px auto;
-      border-radius: 27.5px;
-      border: solid 1px #2f383b;
-      background-color: #2f383b;
 
       p {
-        width: 150px;
-        font-size: 13px;
-        font-weight: bold;
-        line-height: 2.92;
-        letter-spacing: 0.26px;
-        text-align: center;
+        font-size: 15px;
+        font-weight: 900;
+        line-height: 3.67;
+        letter-spacing: 1.8px;
+        text-align: left;
+        color: rgba(34, 36, 27, 0.89);
         text-transform: uppercase;
-        color: white;
       }
     }
   }
-  }
-footer {
-  background-color: #2f383b;
-  height: 113px;
+}
 
-  .footer__text {
+#jobs {
+  padding-bottom: 110px;
+
+  h2 {
+    font-size: 37px;
+    line-height: 1.49;
+    letter-spacing: 4.44px;
+    text-align: left;
+    color: #22241b;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+
+  .jobs__wrapper {
     display: flex;
+    justify-content: space-between;
 
-    p {
-      opacity: 0.55;
-      font-size: 13px;
-      line-height: 2.92;
-      letter-spacing: 0.26px;
-      text-align: left;
-      color: rgba(255, 255, 255, 0.55);
-      margin-right: 205px;
-      padding-top: 40px;
-      padding-bottom: 50px;
+    .image {
+      margin-bottom: 125px;
+      position: relative;
+      z-index: 1;
 
-      &:nth-child(3) {
-        margin-right: 0;
-        opacity: 0.9;
+      .overlay {
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        width: 100%;
+        z-index: 5;
+        left: 0;
+        top: 0;
+        height: 100%;
+        opacity: 0;
+        transition: all ease 1s;
+
+        p {
+          color: white;
+          text-align: center;
+
+          &:nth-child(1) {
+            font-size: 15px;
+            font-weight: 900;
+            line-height: 3.67;
+            letter-spacing: 0.3px;
+            padding-top: 100px;
+          }
+
+          &:nth-child(2) {
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 4.23;
+            letter-spacing: 0.26px;
+            color: #ffffff;
+
+            &:after {
+              content: '';
+              display: block;
+              width: 61px;
+              height: 1px;
+              opacity: 0.46;
+              background-color: #858587;
+              text-align: center;
+            }
+          }
+        }
       }
     }
+
+    .image:hover .overlay {
+      opacity: 1;
+    }
+  }
+
+  p {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 5;
+    letter-spacing: 1.54px;
+    text-align: left;
+    color: rgba(34, 36, 27, 0.66);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    width: 90%;
+  }
+  .menu {
+    display: none;
+  }
+  .logo {
+    width: 100%;
+  }
+  .email {
+    width: 100%;
   }
 }

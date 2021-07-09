@@ -4,136 +4,148 @@
     {% include "./components/head.njk" %}
 </head>
 <body>
-    <header>
+    <section id="header">
         <div class="container">
-            <div id="header">
-                <div class="header__logo">
-                    <img src="./img/logo.png">
+            <header>
+                <div class="logo">
+                    <img src="../img/logo.png">
                 </div>
-                <div class="header__h1">
-                    <h1>Я занимаюсь вёрсткой и делаю это профессионально</h1>
+                <div class="menu">
+                    <nav>
+                        <a href="#">Обо мне</a>
+                        <a href="#">Навыки</a>
+                        <a href="#">Работы</a>
+                    </nav>
                 </div>
-                <div class="header__button">
-                    <div class="header__button_text">Связаться со мной</div>
+                <div class="email">
+                    info@myname.com
                 </div>
-                <div class="header__arrow">
-                    <img src="./img/arrow.png">
-                </div>
+            </header>
+            <div class="text">
+                <h1>Дело, которым я живу</h1>
+                <p>верстка & frontend</p>
+            </div>
+            <div class="img">
+                <a href="#">
+                    <img src="../img/arrow.png">
+                </a>
             </div>
         </div>
-    </header>
-        <section id="description-first">
-            <div class="container">
-                <h2 class="wrapper__h2">
-                    Обо мне
-                </h2>
-                <div class="wrapper">
-                    <div class="wrapper__first">
-                        <h3>О миссии</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                        <p>
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
-                        </p>
-                    </div>
-                    <div class="wrapper__second">
-                        <h3>О заслугах</h3>
-                        <div class="merit__list">
-                            <div class="merit__item">
-                                <img src="./img/bug.png">
-                                <p class="text">
-                                    Волшебный жук
-                                </p>
-                                <p class="hint">
-                                    Позволяет быть в тонусе
-                                </p>
-                            </div>
-                            <div class="merit__item">
-                                <img src="./img/bell.png">
-                                <p class="text">
-                                    Особый колокольчик
-                                </p>
-                                <p class="hint">
-                                    Позволяет не проспать
-                                </p>
-                            </div>
-                            <div class="merit__item">
-                                <img src="./img/storm.png">
-                                <p class="text">
-                                    Человек-молния
-                                </p>
-                                <p class="hint">
-                                    Я сдаю все проекты раньше
-                                </p>
-                            </div>
-                            <div class="merit__item">
-                                <img src="./img/camera.png">
-                                <p class="text">
-                                    Фотографирую
-                                </p>
-                                <p class="hint">
-                                    Просто мне это нравится
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
     </section>
-    <section id="description-second">
+    <section id="aboutme">
         <div class="container">
-            <h2 class="content__h2">
-                Почему ко мне обращаются
-            </h2>
-            <div class="content">
-                <div class="content-first">
-                    <div class="item">
-                        <div class="number">1</div>
-                        <div class="text">
-                            Умный и разумный
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="number">2</div>
-                        <div class="text">
-                            Красивый и приятный
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="number">3</div>
-                        <div class="text">
-                            Мой код любят девушки
-                        </div>
-                    </div>
-                </div>
-                <div class="content-second">
-                    <h3>
-                        Мне кажется,
-                    </h3>
+            <h2>Обо мне</h2>
+            <div class="wrapper">
+                <div class="background">
+                    <h3>Бэкграунд</h3>
                     <p>
-                        Вам просто необходимо связаться со мной, иначе вы рискуете упустить знакомство с лучшим человеком на земле
-                    </p>
-                    <div class="connection">
-                        <p>Связаться со мной</p>
-                    </div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
+                    </p> <br>
+                    <p>
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.
+                    </p> <br>
+                    <p>
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa quiis aute irure dolor in reprehenderit in is aute irure dolor in reprehenderit in is aute irure dolor in reprehenderit in.
+                    </p> <br>
+                </div>
+                <div class="merits">
+                    <h3>Заслуги</h3>
+                        <div class="merits__menu">
+                            <div class="item">
+                                <div class="item__wrapper">
+                                    75
+                                </div>
+                                <p>Реализованных проектов</p>
+                            </div>
+                            <div class="item">
+                                <div class="item__wrapper">
+                                    154
+                                </div>
+                                <p>Положительных отзывов</p>
+                            </div>
+                            <div class="item">
+                                <div class="item__wrapper">
+                                    8
+                                </div>
+                                <p>Лет опыта</p>
+                            </div>
+                        </div>
+                        <div class="connection">
+                            <h3>Связь</h3>
+                            <div class="connection__wrapper">
+                                <div class="connection__text">
+                                    <a href="#">freelance.ru/myname</a>
+                                    <a href="#">vk.com/12343</a>
+                                    <a href="#">info@sitename.ru</a>
+                                </div>
+                                <div class="connection__img">
+                                    <img src="../img/personincircle.png">
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer>
+    <section id="skills">
         <div class="container">
-            <div class="footer__text">
-                <p>
-                    2016/ Все права защищены
-                </p>
-                <p>
-                    Мое имя и фамилия
-                <p>
-                    Политика конфиденциальности
-                </p>
+            <h2>Навыки</h2>
+            <div class="skills__menu">
+                <div class="item">
+                    <div class="item__wrapper">
+                        98%
+                    </div>
+                    <p>Photoshop</p>
+                </div>
+                <div class="item">
+                    <div class="item__wrapper">
+                        99%
+                    </div>
+                    <p>Html5</p>
+                </div>
+                <div class="item">
+                    <div class="item__wrapper">
+                        100%
+                    </div>
+                    <p>Css3</p>
+                </div>
+                <div class="item">
+                    <div class="item__wrapper">
+                        0%
+                    </div>
+                    <p>Лень</p>
+                </div>
             </div>
         </div>
-    </footer>
+    </section>
+    <section id="jobs">
+        <div class="container">
+            <h2>Работы</h2>
+            <div class="jobs__wrapper">
+                <div class="image">
+                    <img src="../img/picture1.png">
+                    <div class="overlay">
+                        <p>НАЗВАНИЕ РАБОТЫ</p>
+                        <p>Смотреть</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="../img/picture2.png">
+                    <div class="overlay">
+                        <p>НАЗВАНИЕ РАБОТЫ</p>
+                        <p>Смотреть</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="../img/picture3.png">
+                    <div class="overlay">
+                        <p>НАЗВАНИЕ РАБОТЫ</p>
+                        <p>Смотреть</p>
+                    </div>
+                </div>
+            </div>
+            <p>2017-2099 / Смотрю в будущее</p>
+        </div>
+    </section>
 </body>
 </html>
